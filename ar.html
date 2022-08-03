@@ -80,7 +80,11 @@ AFRAME.registerComponent("peakfinder", {
       cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
       info-message="htmlSrc: #messageText">
       <a-camera gps-camera rotation-reader></a-camera>
-      
+      <a-box
+        material="color: black"
+        scale="0.1 0.1 0.1"
+        boxentity
+      ></a-box>
       <a-entity peakfinder></a-entity>
       <a-assets>
         <a-asset-item id="messageText" src="message.html"></a-asset-item>
